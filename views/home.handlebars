@@ -1,0 +1,48 @@
+{{!-- <h1>Caminho home</h1> --}}
+<h1>Lista de alunos:</h1><br>
+<a href="http://localhost:5501/"><button class="button-29" role="button">Início</button></a>
+<br><br>
+<div id="fundo-branco2">
+<table>
+    <tr>
+        <th>Data</th>
+        <th>Hora</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Máquina</th>
+        <th>Opção</th>
+    </tr>
+    {{#each marcarHorario}}
+    <tr>
+        <td>{{data}}</td>
+        <td>{{hora}}</td>
+        <td>{{nome}}</td>
+        <td>{{sobrenome}}</td>
+        <td>{{maquina}}</td>
+        <td><a href="http://localhost:5501/deletar/{{id}}"><button class="button-29" role="button">Deletar</button></td>
+    </tr>
+    {{/each}}
+</table>
+</div>
+
+
+<style>
+    td, tr, table {            
+        border: 1px solid black;        
+        align-items: center;
+    }
+    table {
+        width: 900px;
+    }
+    #fundo-branco2 {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 500px;
+    max-width: 900px;
+    margin: auto; /* Centraliza */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    min-height: 220px;
+}
+
+</style>

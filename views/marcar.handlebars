@@ -1,0 +1,33 @@
+<form id="fundo-branco">
+    <div>
+    <p><h2>Nome: </h2><input type="text" name="nome"></p>
+    <p><h2>Sobrenome: </h2><input type="text" name="sobrenome"></p>
+    <p><h2>Máquina: </h2>
+    <select name="maquina">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    </p>
+    <p><h2>Data: </h2><input type="date" name="data"></p>
+    <p><h2>Hora: </h2><input type="time" name="hora"></p>
+    <button formaction="http://localhost:5501/marcacao" formmethod="post" class="button-29" role="button">Inserir</button>
+    <button formaction="http://localhost:5501/usuarios" formmethod="get" class="button-29" role="button">Ver Horários</button> 
+    </div>
+</form>
+
+<style>
+    select {
+        height: 35px;
+        width: 65px;
+    }
+</style>
